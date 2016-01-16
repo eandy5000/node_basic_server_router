@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 var http = require('http');
 var url = require('url');
 var path = require('path');
@@ -52,4 +44,6 @@ http.createServer(function(req, res){
         res.end();
     }
 
-}).listen(3000);
+}).listen(3000, function(){
+    console.log('listening on port 3000');
+});
